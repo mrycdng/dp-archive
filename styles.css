@@ -1,3 +1,18 @@
+@font-face {
+    font-family: phili;
+    src: url(fonts/PhiliItaRusExt.ttf);
+}
+
+@font-face {
+    font-family: liberation;
+    src: url(fonts/LiberationSans-Regular.ttf);
+}
+
+/* @font-face {
+    font-family: flux;
+    src: url(fonts/FluxischElse-Bold.otf);
+} */
+
 html, body {
     overflow: hidden;
     margin:0;
@@ -5,28 +20,30 @@ html, body {
   }
 
 .nav {
-    color:black;
-    background-color:lightgrey;
+    color:white;
+    background-color:black;
     mix-blend-mode:screen;
     font-family:sans-serif;
     height:3%;
     text-align:center;
     /* padding-left:10%;
     text-indent:-10%; */
-    line-height:3vh;
     text-transform:uppercase;
+    
 
     display: flex;
-    justify-content:space-between;
+    justify-content:space-around;
 
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .nav-left {
     width:60%;
+    align-content:center;
 }
 .nav-right {
     width:40%;
+    align-content:center;
 }
 
 .main::-webkit-scrollbar {
@@ -61,7 +78,7 @@ body {
 
     background-color:olive;
 
-    font-family:sans-serif;
+    font-family: liberation;
 
     /* display:flex;
     flex-direction:column;
@@ -72,9 +89,12 @@ body {
 .container {
     display: flex;
     justify-content:space-between;
-    /* gap: 10px; */
-    height:97%;
-    margin:0;
+    /* gap: 5px; */
+
+    height:94%;
+    width:100%;
+    
+    margin:auto;
     padding:0;
     box-sizing:border-box;
 
@@ -96,7 +116,10 @@ body {
     text-align-last: justify;
 
     width:80%;
+    padding-top:5px;
     padding-left:10%;
+
+    font-family:phili;
 
 }
 
@@ -201,7 +224,9 @@ body {
     flex-direction:row;
     gap:10px;
 
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* font-size:.8rem; */
+    /* line-height:1rem; */
 
 }
 
@@ -238,7 +263,7 @@ body {
 .main .highlight {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size:1rem;
-    font-weight:bold;
+    /* font-weight:bold; */
     padding:1rem;
     mix-blend-mode:multiply;
     text-transform:uppercase;
@@ -292,9 +317,9 @@ body {
 }
 
 .small-caps {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-transform:uppercase;
-    font-weight:bold;
+    /* font-weight:bold; */
     width:20%;
     height:fit-content;
     /* background-color:inherit; */
