@@ -211,7 +211,6 @@ body {
 
     overflow-y: scroll;
     scroll-behavior: smooth;
-
 }
 
 .side-inner {
@@ -254,6 +253,7 @@ body {
 .og {
     background-color:black !important;
     color:white !important;
+
 }
 
 
@@ -281,6 +281,7 @@ body {
 
 .side .highlight {
     background:none;
+    
 }
 
 .side .highlight-yellow p {
