@@ -253,7 +253,7 @@ body {
 
 .og {
     background-color:black !important;
-    color:white;
+    color:white !important;
 }
 
 
@@ -266,7 +266,7 @@ body {
 .main .highlight {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size:1rem;
-    /* font-weight:bold; */
+    font-weight:bold;
     padding:1rem;
     mix-blend-mode:multiply;
     text-transform:uppercase;
@@ -322,7 +322,7 @@ body {
 .small-caps {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-transform:uppercase;
-    /* font-weight:bold; */
+    font-weight:bold;
     width:20%;
     height:fit-content;
     /* background-color:inherit; */
