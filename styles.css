@@ -1,6 +1,56 @@
 html, body {
     overflow: hidden;
+    margin:0;
+    padding:0;
   }
+
+.nav {
+    color:black;
+    background-color:lightgrey;
+    mix-blend-mode:screen;
+    font-family:sans-serif;
+    height:3%;
+    text-align:center;
+    /* padding-left:10%;
+    text-indent:-10%; */
+    line-height:3vh;
+    text-transform:uppercase;
+
+    display: flex;
+    justify-content:space-between;
+
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.nav-left {
+    width:60%;
+}
+.nav-right {
+    width:40%;
+}
+
+.main::-webkit-scrollbar {
+    width: 5px;    
+    height:100%;  
+}
+
+
+.main::-webkit-scrollbar-track {
+    background: none;
+}
+
+
+.main::-webkit-scrollbar-thumb {
+    background-color: black;
+    border-radius: 0px;  
+}
+
+
+.side::-webkit-scrollbar {
+    display:none;
+}
+
+
 
 body {
 
@@ -9,18 +59,29 @@ body {
 
     overflow:hidden;
 
-    padding:0;
-    margin:0;
-    background-color:darkblue;
+    background-color:olive;
 
     font-family:sans-serif;
+
+    /* display:flex;
+    flex-direction:column;
+    gap:0; */
 }
+
 
 .container {
     display: flex;
     justify-content:space-between;
     /* gap: 10px; */
-    height:100%;
+    height:97%;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+.container::selection {
+    background-color:white;
 }
 
 
@@ -32,18 +93,27 @@ body {
 
     background-color:black;
     color:white;
-    text-align: center;
+    text-align-last: justify;
+
+    width:80%;
+    padding-left:10%;
 
 }
 
 .main h2 {
     background-color:white;
-    text-align:center;
+    text-align:justify;
+
+    width:80%;
+    padding-left:10%;
 }
 
 .main h3 {
     background-color:white;
     text-align:center;
+
+    width:80%;
+    padding-left:10%;
 
 }
 
@@ -56,23 +126,28 @@ body {
 
     box-sizing:border-box;
     width:60%;
-    height: 100vh;
+    height:100%;
     background-color: lightgrey;
     
     margin:0;
-    padding:5px;
-    padding-right:0px;
-    /* padding-left:5px;
-    padding-top:5px; */
+    padding:0px;
+    padding-top:5px;
     box-sizing: border-box;
 
-    overflow:auto;
+    mix-blend-mode:screen;
+
+    overflow:scroll;
     scroll-behavior: smooth;
 }
 
 .main p {
     font-size:1.5rem;
     text-align:left;
+
+    width:80%;
+    padding-left:10%;
+    text-indent: -10%;
+
 
 }
 
@@ -97,30 +172,41 @@ body {
     background-color: lightgrey;
     height: 100%;
     margin:0;
-    padding:5px;
-    /* padding-left:5px;
-    padding-top:5px; */
+    padding:0;
+    padding-top:5px;
+
+    scroll-margin-top:5px;
 
     display:flex;
     flex-direction:column;
     gap:10px;
 
+    mix-blend-mode:screen;
+
     overflow-y: scroll;
     scroll-behavior: smooth;
+
 }
 
 .side-inner {
-    background-color:white;
+    mix-blend-mode:multiply;
     box-sizing:border-box;
     padding:30px;
     padding-left:5px;
     padding-top:5px;
-    scroll-margin-top:5px;
+
+
+
+    display:flex;
+    flex-direction:row;
+    gap:10px;
+
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
 
 .side-inner p {
-    background-color:inherit;
+    /* background-color:inherit; */
     margin-top:0;
     margin-bottom:0;
 }
@@ -149,14 +235,30 @@ body {
     
 }
 
+.main .highlight {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:1rem;
+    font-weight:bold;
+    padding:1rem;
+    mix-blend-mode:multiply;
+    text-transform:uppercase;
+}
+.main .highlight:hover {
+    /* mix-blend-mode:color-burn; */
+}
+
 .main .highlight-yellow:hover {
     color:yellow;
 }
 
-#s-mockup-producers {
-    display:flex;
-    flex-direction:row;
+.side .highlight {
+    background:none;
 }
+
+.side .highlight-yellow p {
+    background-color:yellow;
+}
+
 
 .personal {
     background-color:darkorange;
@@ -166,14 +268,36 @@ body {
     color:darkorange;
 }
 
-#personal-1 {
-    scroll-margin-top:5px;
+.side .personal p {
+    background-color:darkorange;
 }
 
 .highlight-blue {
     background-color:lightskyblue;
 }
+.side-inner.highlight-blue {
+    background-color:lightskyblue;
+    display:block;
+    scroll-margin-top:5px;
+}
+
+.highlight-blue-text {
+    display:flex;
+    flex-direction:row;
+    gap:10px;
+}
 
 .main .highlight-blue:hover {
     color:lightskyblue;
+}
+
+.small-caps {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform:uppercase;
+    font-weight:bold;
+    width:20%;
+    height:fit-content;
+    /* background-color:inherit; */
+    
+    
 }
