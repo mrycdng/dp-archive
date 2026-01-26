@@ -1,6 +1,6 @@
 @font-face {
     font-family: phili;
-    src: url(fonts/PhiliItaRusExt.ttf);
+    src: url(fonts/PhiliItaRus.ttf);
 }
 
 @font-face {
@@ -8,10 +8,10 @@
     src: url(fonts/LiberationSans-Regular.ttf);
 }
 
-/* @font-face {
-    font-family: flux;
-    src: url(fonts/FluxischElse-Bold.otf);
-} */
+@font-face {
+    font-family: waxwing;
+    src: url(fonts/Waxwing-Regular.ttf);
+}
 
 html, body {
     overflow: hidden;
@@ -120,6 +120,7 @@ body {
     padding-left:10%;
 
     font-family:phili;
+    letter-spacing:.05rem;
 
 }
 
@@ -137,6 +138,8 @@ body {
 
     width:80%;
     padding-left:10%;
+
+    
 
 }
 
@@ -249,7 +252,7 @@ body {
 }
 
 .og {
-    background-color:black;
+    background-color:black !important;
     color:white;
 }
 
