@@ -308,12 +308,15 @@ body {
     background-color:darkorange;
 }
 
+.personal-text {
+    margin-left:-10px;
+}
 
 .highlight-blue {
     background-color:lightskyblue;
 }
 .side-inner.highlight-blue {
-    background-color:lightskyblue;
+    background-color:lightskyblue !important;
     display:block;
     scroll-margin-top:5px;
 }
@@ -352,13 +355,14 @@ body {
     font-weight:bold;
     word-wrap: break-word;
     hyphens:auto;
-    width:20%;
+    min-width:100px;
+    max-width:100px;
     height:fit-content;
     /* background-color:inherit; */
 }
 
 .quote-indent {
-    padding-left:40px;
+    padding-left:50px;
     font-family:phili;
     line-height:1.1rem;
 }
