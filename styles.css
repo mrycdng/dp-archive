@@ -265,13 +265,6 @@ body {
 
 }
 
-
-.highlight-yellow {
-    background-color:yellow;
-    
-    
-}
-
 .main .highlight {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size:1rem;
@@ -283,6 +276,11 @@ body {
 .main .highlight:hover {
     /* mix-blend-mode:color-burn; */
 }
+
+.highlight-yellow {
+    background-color:yellow;
+}
+
 
 .main .highlight-yellow:hover {
     color:yellow;
@@ -310,6 +308,7 @@ body {
     background-color:darkorange;
 }
 
+
 .highlight-blue {
     background-color:lightskyblue;
 }
@@ -329,6 +328,24 @@ body {
     color:lightskyblue;
 }
 
+.highlight-green {
+    background-color:lightgreen;
+}
+
+
+.main .highlight-green:hover {
+    color:lightgreen;
+}
+
+.side .highlight {
+    background:none;
+    
+}
+
+.side .highlight-green p {
+    background-color:lightgreen;
+}
+
 .small-caps {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-transform:uppercase;
@@ -338,6 +355,10 @@ body {
     width:20%;
     height:fit-content;
     /* background-color:inherit; */
-    
-    
+}
+
+.quote-indent {
+    padding-left:40px;
+    font-family:phili;
+    line-height:1.1rem;
 }
