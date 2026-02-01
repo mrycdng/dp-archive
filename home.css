@@ -1,0 +1,194 @@
+body {
+    background-color: lightgrey;
+    font-family: liberation;
+}
+
+.plus {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 3%;
+    width: 10px;
+    align-content: center;
+
+    background-color: white;
+    color: rgb(40, 40, 40);
+
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.nav {
+    mix-blend-mode: normal;
+}
+
+.nav-center {
+    width: 100%;
+    text-align: center;
+    align-content: center;
+}
+
+.nav-filter {
+    color:white;
+    background-color:rgb(40, 40, 40);
+    display:flex;
+    flex-direction:column;
+    align-content: center;
+
+}
+
+/* .nav-top-left {
+    width: 20%;
+}
+
+.nav-top-right {
+    width: 80%;
+} */
+
+.nav-bot-left {
+    width: 20%;
+}
+
+.nav-bot-right {
+    width: 100%;
+}
+
+.nav-2 {
+    margin-top: 5px;
+    background-color: rgb(40, 40, 40);
+}
+
+.container {
+    background-color: lightgrey;
+    height: 94%;
+}
+
+.side,
+.main {
+    mix-blend-mode: normal;
+    padding-top:5px;
+}
+
+
+.main {
+    width: 20%;
+    mix-blend-mode: normal;
+    overflow: auto;
+
+}
+
+.main p {
+    text-indent: unset;
+    width: 80%;
+    /* text-align:justify; */
+    /* text-align-last: center; */
+}
+
+.main h1 {
+    text-align: center;
+    text-align-last: center;
+    word-wrap: break-word;
+}
+
+.highlight-white {
+    background-color: rgba(211, 211, 211, 0.5);
+    line-height: 2.4rem;
+
+}
+
+.main .highlight-white:hover {
+    background-color: white;
+    mix-blend-mode: normal;
+}
+
+.side {
+    width: 80%;
+    gap:0;
+}
+
+.side a {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(40, 40, 40);
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+details {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(40, 40, 40);
+
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    
+    cursor: pointer;
+}
+
+details summary::marker {
+    display: none;
+    content: "";
+}
+
+.texts-title {
+    font-family: phili;
+    font-size: 2rem;
+    text-transform: uppercase;
+
+    background-color: olive;
+    mix-blend-mode: screen;
+
+    text-align: justify;
+    text-align-last: justify;
+
+    padding-top: 5px;
+    padding-left:10%;
+    padding-right:10%;
+
+
+    font-family: phili;
+    letter-spacing: .05rem;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+}
+
+.texts-author {
+    background-color: white;
+    color: rgb(40, 40, 40);
+
+    text-align: center;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.texts-details {
+    background-color: white;
+    background-image:linear-gradient(to right, white, lightgrey);
+
+    color: rgb(40, 40, 40);
+    font-size: 1.5rem;
+    text-indent: -10%;
+    padding-left: 10%;
+    padding-right:10%;
+    padding-bottom:5px;
+    
+
+}
+
+.texts-details p {
+    margin-bottom:0;
+    margin-top:0;
+
+    /* padding:30px; */
+}

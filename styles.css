@@ -8,10 +8,6 @@
     src: url(fonts/LiberationSans-Regular.ttf);
 }
 
-@font-face {
-    font-family: waxwing;
-    src: url(fonts/Waxwing-Regular.ttf);
-}
 
 html, body {
     overflow: hidden;
@@ -21,7 +17,7 @@ html, body {
 
 .nav {
     color:white;
-    background-color:black;
+    background-color:rgb(40,40,40);
     mix-blend-mode:screen;
     font-family:sans-serif;
     height:3%;
@@ -56,7 +52,7 @@ html, body {
 
 
 .main::-webkit-scrollbar-thumb {
-    background-color: black;
+    background-color: rgb(40,40,40);
     border-radius: 0px;  
 }
 
@@ -85,7 +81,7 @@ body {
     /* background-image:url("bg-test-2.png"); */
     /* background-size:cover;
     background-position:center; */
-    /* background-blend-mode:overlay; */
+    /* background-blend-mode:screen; */
 }
 
 
@@ -115,8 +111,9 @@ body {
     position:sticky;
     top:0px;
 
-    background-color:black;
+    background-color:rgb(40,40,40);
     color:white;
+    text-align: justify;
     text-align-last: justify;
 
     width:80%;
@@ -180,6 +177,8 @@ body {
     padding-left:10%;
     text-indent: -10%;
 
+    color:rgb(40,40,40);
+
 
 }
 
@@ -189,7 +188,7 @@ body {
 }
 
 .main a:hover {
-    background-color:black;
+    background-color:rgb(40,40,40);
 }
 
 
@@ -228,7 +227,7 @@ body {
     padding-left:5px;
     padding-top:5px;
 
-
+    color:rgb(40,40,40);
 
     display:flex;
     flex-direction:row;
@@ -244,6 +243,7 @@ body {
   
     margin-top:0;
     margin-bottom:0;
+    
 }
 
 
@@ -260,7 +260,7 @@ body {
 }
 
 .og {
-    background-color:black !important;
+    background-color:rgb(40,40,40) !important;
     color:white !important;
 
 }
@@ -272,6 +272,8 @@ body {
     padding:1rem;
     mix-blend-mode:multiply;
     text-transform:uppercase;
+
+    cursor:pointer;
 }
 .main .highlight:hover {
     /* mix-blend-mode:color-burn; */
@@ -366,3 +368,4 @@ body {
     font-family:phili;
     line-height:1.1rem;
 }
+

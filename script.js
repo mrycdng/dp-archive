@@ -4,7 +4,7 @@ const MAX = 1;
 
 // const smallcaps = document.getElementsByClassNmae("small-caps");
 
-//   document.querySelectorAll("p").forEach(p => {
+//   document.querySelectorAll(".highlight").forEach(p => {
 //     const angle = Math.random() * (MAX - MIN) + MIN;
 //     p.style.transform = `rotate(${angle}deg)`;
 //   });
