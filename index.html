@@ -7,11 +7,29 @@
     <title>Beyond The Spectacle: An Archive</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="home.css">
+
+    <script src="home.js" defer></script>
+    <script src="about.js" defer></script>
 </head>
 
 <body>
 
-    <div class="plus">+</div>
+    <button id="plus" onclick="showOrHide()">+</button>
+
+    <div id="about">
+        <p>
+            This website acts as both foundation and companion to Marie You’s BFA Graphic Design Degree Project,
+            BEYOND THE SPECTACLE.
+            The texts it houses serve as the ideological platform atop which the DP’s explorative designs rest. 
+            Through a multitude of ways, they question and examine the dominating visual culture as well as
+            the “spectacles” it creates.
+        </p>
+        <p>
+            In response to the DP’s goal to develop a more authentic personal practice, the archive utilises a 
+            hypertext structure rich with annotations and external/internal links which make transparent the 
+            artist’s lines of inquiry and subsequent personal reflections. 
+        </p>
+    </div>
 
     <div class="nav">
         <div class="nav-center">Beyond The Spectacle: An Archive</div>
@@ -27,13 +45,13 @@
     <div class="container">
 
         <div class="main">
-            <div class="nav nav-filter">Texts</div>
-            <!-- <h1>FILTER</h1> -->
+            <div class="nav nav-filter">Filter Texts</div>
+            <!--
             <p>
                 <span class="highlight highlight-white">View All</span>,
                 <span class="highlight highlight-white">Favourites</span>
             </p>
-            <!-- <h3><i>Sources</i></h3> -->
+
             <p>
                 Filter by source:<span class="highlight highlight-white">Online Article</span>,
                 <span class="highlight highlight-white">Video Transcript</span>,
@@ -42,9 +60,8 @@
                 <span class="highlight highlight-white">Interview</span>,
                 <span class="highlight highlight-white">Social Media</span>
             </p>
-            <br>
-            <!-- <h3><i>Subject</i></h3> -->
-            <p>Filter by subject/ keyword:
+            <br> -->
+            <!-- <p>Filter by subject/ keyword:
                 <span class="highlight highlight-white">Graphic Design</span>,
                 <span class="highlight highlight-white">Arts</span>,
                 <span class="highlight highlight-white">Critical Theory</span>,
@@ -53,15 +70,39 @@
                 <span class="highlight highlight-white">Web Design</span>,
                 <span class="highlight highlight-white">Art History</span>,
                 <span class="highlight highlight-white">History</span>,
+            </p> -->
+
+            <p><button class="btn active" onclick="filterSelection('all')"> Show All </button></p>
+            <div class="nav nav-filter" style="color:rgb(40,40,40); background-color:white;">Source</div>
+            <p>
+                <button class="btn" onclick="filterSelection('online-article')"> Online Article</button><br>
+                <button class="btn" onclick="filterSelection('book')"> Book</button><br>
+                <button class="btn" onclick="filterSelection('video')"> Video Transcript</button><br>
+                <button class="btn" onclick="filterSelection('interview')"> Interview</button><br>
+                <button class="btn" onclick="filterSelection('social-media')"> Social Media</button><br>
+            </p>
+            <div class="nav nav-filter" style="color:rgb(40,40,40); background-color:white;">Subject</div>
+            <p>
+                <button class="btn" onclick="filterSelection('graphic-design')"> Graphic Design</button><br>
+                <button class="btn" onclick="filterSelection('graphic-design')"> Art</button><br>
+                <button class="btn" onclick="filterSelection('art-history')"> Art History</button><br>
+                <button class="btn" onclick="filterSelection('history')"> History</button><br>
+                <button class="btn" onclick="filterSelection('critical-theory')"> Critical Theory</button><br>
+                <button class="btn" onclick="filterSelection('pop-culture')"> Pop culture</button><br>
+                <button class="btn" onclick="filterSelection('video-games')"> Video Games</button><br>
+                <button class="btn" onclick="filterSelection('web-design')"> Web Design</button><br>
+                <button class="btn" onclick="filterSelection('web-design')"> Web Design</button><br>
+                <button class="btn" onclick="filterSelection('web-design')"> Web Design</button><br>
+
             </p>
 
         </div>
 
         <div class="side">
 
-            <details>
+            <details class="content online-article graphic-design" id="texts-goodspeed">
                 <summary>
-                    <div class="texts-title" style="background-color:oliv">
+                    <div class="texts-title">
                         The Power and the Perils of the Mockup
                     </div>
                     <div class="texts-author">
@@ -78,13 +119,14 @@
                         intricate and impactful scenarios – and reshape industry norms in the process. This shift not
                         only changes how we present our work, but also fundamentally redefines our definition of design
                         production.
+                        <a class="read" href="texts/goodspeed.html" target="_blank">[READ]</a>
                     </p>
                 </div>
             </details>
 
-            <details>
+            <details class="content book critical-theory" id="texts-debord">
                 <summary>
-                    <div class="texts-title" style="background-color:darkmagenta">
+                    <div class="texts-title">
                         The Society of The Spectacle (Exerpts)
                     </div>
                     <div class="texts-author">
@@ -95,13 +137,14 @@
                     <p>1. In societies where modern conditions of production prevail, all of life presents itself as an
                         immense accumulation of spectacles. Everything that was directly lived has moved away into a
                         representation.
+                        <a class="read" href="texts/goodspeed.html" target="_blank">[READ]</a>
                     </p>
                 </div>
             </details>
 
-            <details>
+            <details class="content video video-games" id="texts-geller">
                 <summary>
-                    <div class="texts-title" style="background-color:royalblue">
+                    <div class="texts-title">
                         The Future Is An Empty Room
                     </div>
                     <div class="texts-author">
@@ -110,20 +153,18 @@
                 </summary>
                 <div class="texts-details">
                     <p>There’s a moment in the very first episode of <i></i> that I keep thinking about.
-                        In many ways, that first episode establishes
-                        the formula for the entire following series. It 
-                    features a main character who is, unbeknownst
-                    to him, already embroiled in a highly unusual 
-                    situation. It stars a single actor, who
-                    gives a big, showy, performance. There’s
-                    a twist at the end that recontextualizes
-                    what the whole story was about.
+                        In many ways, that first episode establishes the formula for the entire following series. It
+                        features a main character who is, unbeknownst
+                        to him, already embroiled in a highly unusual situation. It stars a single actor, who
+                        gives a big, showy, performance. There’s a twist at the end that recontextualizes
+                        what the whole story was about.
+                        <a class="read" href="texts/goodspeed.html" target="_blank">[READ]</a>
                 </div>
             </details>
 
-            <details>
+            <details class="content online-article graphic-design" id="texts-malcontent">
                 <summary>
-                    <div class="texts-title" style="background-color:brown">
+                    <div class="texts-title">
                         Fragments on Decadence (For Design)
                     </div>
                     <div class="texts-author">
@@ -131,18 +172,26 @@
                     </div>
                 </summary>
                 <div class="texts-details">
-                    <p>We value the virtual representation of an object more than we do the object itself”</p><br>
+                    <p>In 1966, film director Jaques Rivette conducted an interview with fellow director Jean Renoir
+                        (son of Impressionist
+                        painter Pierre Auguste Renoir). The videos (Part One and Part Two) display Renoir’s litany of
+                        how technical progress
+                        in art always ends in a state of decadence.
+                        <a class="read" href="texts/goodspeed.html" target="_blank">[READ]</a>
                     </p>
                 </div>
             </details>
 
         </div>
+
+
     </div>
 
     <div class="nav">
         <!-- <div class="nav-left nav-bot-left"></div> -->
         <div class="nav-right nav-bot-right">By Marie You | Last updated: 2026.01.31</div>
     </div>
+
 </body>
 
 </html>

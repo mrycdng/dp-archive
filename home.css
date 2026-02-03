@@ -1,25 +1,18 @@
 body {
     background-color: lightgrey;
     font-family: liberation;
+    display:flex;
+    flex-direction:column;
+    gap:0px;
 }
 
-.plus {
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    height: 3%;
-    width: 10px;
-    align-content: center;
-
-    background-color: white;
-    color: rgb(40, 40, 40);
-
-    padding-right: 10px;
-    padding-left: 10px;
+#plus {
+    mix-blend-mode:normal;
 }
 
 .nav {
     mix-blend-mode: normal;
+
 }
 
 .nav-center {
@@ -35,15 +28,45 @@ body {
     flex-direction:column;
     align-content: center;
 
+    position:sticky;
+    top:0px;
+
+    width:100%;
 }
 
-/* .nav-top-left {
-    width: 20%;
+.main::-webkit-scrollbar {
+    display:none;
 }
 
-.nav-top-right {
-    width: 80%;
+.content {
+    display:none;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+    display: block;
+  }
+
+.btn {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight:bold;
+    border:none;
+
+    padding:1em;
+    cursor:pointer;
+    background-color: lightgrey;
+    
+}
+
+.btn:hover {
+    background-color:white;
+}
+
+/* .btn.active {
+    background-color:red;
 } */
+
 
 .nav-bot-left {
     width: 20%;
@@ -58,30 +81,40 @@ body {
     background-color: rgb(40, 40, 40);
 }
 
-.container {
-    background-color: lightgrey;
-    height: 94%;
-}
-
 .side,
 .main {
     mix-blend-mode: normal;
+    margin-top:0px;
     padding-top:5px;
 }
 
 
 .main {
-    width: 20%;
+    width: 200px;
     mix-blend-mode: normal;
     overflow: auto;
 
 }
 
+.main h3 {
+    font-weight:normal;
+    font-style:italic;
+}
+
 .main p {
     text-indent: unset;
-    width: 80%;
-    /* text-align:justify; */
-    /* text-align-last: center; */
+    padding-left: 30px;
+    padding-top:0px;
+    margin-top:10px;
+
+    
+    overflow-wrap:break-word;
+
+    margin-left:auto;
+    margin-right:auto;
+
+
+    line-height:3rem;
 }
 
 .main h1 {
@@ -102,21 +135,15 @@ body {
 }
 
 .side {
-    width: 80%;
+    flex:1;
     gap:0;
-}
-
-.side a {
-    text-decoration: none;
-    color: white;
-    background-color: rgb(40, 40, 40);
-
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
+    overflow-y:scroll;
 }
 
 details {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
     text-decoration: none;
     color: white;
     background-color: rgb(40, 40, 40);
@@ -125,6 +152,8 @@ details {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+
+    background-color: olive;
     
     cursor: pointer;
 }
@@ -134,12 +163,20 @@ details summary::marker {
     content: "";
 }
 
+details[open] summary ~ * {
+  }
+  
+  @keyframes summary-open {
+    0%    {opacity: 0; margin-left: -10px}
+    100%  {opacity: 1; margin-left: 0px}
+  }
+
 .texts-title {
     font-family: phili;
     font-size: 2rem;
     text-transform: uppercase;
 
-    background-color: olive;
+    background-color:rgb(40, 40, 40);
     mix-blend-mode: screen;
 
     text-align: justify;
@@ -164,6 +201,8 @@ details summary::marker {
     background-color: white;
     color: rgb(40, 40, 40);
 
+
+    mix-blend-mode: screen;
     text-align: center;
 
     -webkit-user-select: none;
@@ -175,6 +214,8 @@ details summary::marker {
 .texts-details {
     background-color: white;
     background-image:linear-gradient(to right, white, lightgrey);
+
+    mix-blend-mode: screen;
 
     color: rgb(40, 40, 40);
     font-size: 1.5rem;
@@ -192,3 +233,34 @@ details summary::marker {
 
     /* padding:30px; */
 }
+
+.read {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight:bold;
+    font-size:1rem;
+    vertical-align: 2px;
+
+    background-color:rgb(40, 40, 40);
+    color:white;
+    text-decoration:none;
+}
+
+.read:hover {
+    background-color:white;
+    color:rgb(40, 40, 40);
+}
+
+
+#texts-goodspeed {
+    background-color:olive;
+}
+#texts-debord {
+    background-color:darkmagenta;
+}
+#texts-geller {
+    background-color:royalblue;
+}
+#texts-malcontent {
+    background-color:brown;
+}
+
