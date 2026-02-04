@@ -357,9 +357,6 @@ body {
 
     cursor:pointer;
 }
-.main .highlight:hover {
-    /* mix-blend-mode:color-burn; */
-}
 
 .highlight-yellow {
     background-color:yellow;

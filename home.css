@@ -123,7 +123,7 @@ body {
     word-wrap: break-word;
 }
 
-.highlight-white {
+.main .highlight-white {
     background-color: rgba(211, 211, 211, 0.5);
     line-height: 2.4rem;
 
@@ -133,6 +133,8 @@ body {
     background-color: white;
     mix-blend-mode: normal;
 }
+
+
 
 .side {
     flex:1;
