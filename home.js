@@ -23,12 +23,12 @@ var btns = btnContainer.getElementsByClassName("btn");
 for (var i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function () {
 
-    // remove active from ALL buttons
+// Remove active from all buttons
     for (var j = 0; j < btns.length; j++) {
       btns[j].classList.remove("active");
     }
 
-    // add active to clicked button
+// Add active to clicked button
     this.classList.add("active");
   });
 }
