@@ -15,7 +15,9 @@ function setCurrentTime(slideNum) {
         58, 
         137,
         228,
-        293
+        293,
+        354,
+        471
     ];
     player.seekTo(object[slideNum]);
 }
