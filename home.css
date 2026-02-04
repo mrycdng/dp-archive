@@ -140,6 +140,22 @@ body {
     overflow-y:scroll;
 }
 
+.side::-webkit-scrollbar {
+    width: 5px;    
+    height:100%;  
+}
+
+
+.side::-webkit-scrollbar-track {
+    background: none;
+}
+
+
+.side::-webkit-scrollbar-thumb {
+    background-color: rgb(40,40,40);
+    border-radius: 0px;  
+}
+
 details {
     margin-left: auto;
     margin-right: auto;
