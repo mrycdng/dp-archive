@@ -43,6 +43,10 @@ body {
 #body-malcontent {
     background-color:brown;
 }
+#body-jasper-ngai {
+    background-color:mediumvioletred;
+}
+
 
 .nav {
     color:white;
@@ -216,7 +220,8 @@ body {
     width:80%;
     padding-top:5px;
     padding-left:10%;
-    text-indent:-10%;
+
+    /* box-sizing:border-box; */
 
     font-family:phili;
     letter-spacing:.05rem;
