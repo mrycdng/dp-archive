@@ -9,6 +9,7 @@ let showOrHide = function(){
         about.style.display = 'block';
         plus.innerHTML = "X";
         plus.style.mixBlendMode = "multiply";
+        plus.style.backgroundColor = "white";
         clicked = false;
     }
     else {
