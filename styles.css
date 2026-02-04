@@ -37,7 +37,12 @@ body {
 #body-geller {
     background-color:rgb(50, 88, 185);
 }
-
+#body-debord {
+    background-color:darkmagenta;
+}
+#body-malcontent {
+    background-color:brown;
+}
 
 .nav {
     color:white;
@@ -107,12 +112,13 @@ body {
     background-color:white;
 }
 
-#plus {
+#plus,#home {
+    box-sizing:border-box;
+
     position: absolute;
     top: 0px;
-    right: 0px;
     height: 25px;
-    width: 28px;
+    width:32px;
     align-content: center;
 
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -132,7 +138,20 @@ body {
     z-index:5;
 }
 
+#plus {
+    right: 0px;
+}
+#home {
+    left:0px;
+    padding-left:8.5px;
+    text-decoration:none;
+
+}
 #plus:hover {
+    background-color:lightgrey;
+}
+
+#home:hover {
     background-color:lightgrey;
 }
 
