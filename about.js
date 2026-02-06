@@ -1,4 +1,4 @@
-//toggle about on and off
+//toggles about div on and off
 
 const about = document.getElementById('about');
 const plus = document.getElementById('plus');

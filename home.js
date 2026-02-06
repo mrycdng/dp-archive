@@ -1,3 +1,4 @@
+//for the following code I referenced source code from Lucy Pham + w3Schools, and also tried to debug/streamline using ChatGPT
 filterSelection("all");
 
 function filterSelection(category) {
